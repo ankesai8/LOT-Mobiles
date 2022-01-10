@@ -1,4 +1,4 @@
-# [Click]https://makeyouup-ecommerce.netlify.app/) for Deployed Link
+# Click[https://makeyouup-ecommerce.netlify.app/] for Deployed Link
 
 
 
