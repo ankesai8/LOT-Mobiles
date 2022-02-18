@@ -24,7 +24,7 @@ export const BrandData=[
         id:4,
         brandName:"MI",
 		searchName:"mi",
-        description:"Mi True Wireless Earbuds Basic 2S. Mi Portable Bluetooth Speaker (16W) Xiaomi FlipBuds Pro. More. Mi TV. Xiaomi TV P1E 55" Xiaomi TV P1E 43" Xiaomi TV Q1E 55" Mi TV P1 Series. ",
+        description:"Mi True Wireless Earbuds Basic 2S. Mi Portable Bluetooth Speaker (16W) Xiaomi FlipBuds Pro. More. Mi TV. Xiaomi TV P1E 55 Xiaomi TV Q1E 55 Mi TV P1 Series. ",
 
     },
     {
