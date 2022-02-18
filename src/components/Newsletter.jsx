@@ -11,8 +11,8 @@ display: flex;
 flex-direction: column;
 align-items: center;
 justify-content: center;
-background-color: #A675A1;
-color: black;
+background-color: #a68e75;
+color: white;
 padding: 1.4rem;
 `
 
@@ -33,7 +33,7 @@ export default function Newsletter() {
                 <div><h1>Newsletter</h1></div>
                 <div><p>Grab your discount and timely updates for your favourite product</p></div>
                 <div >
-                    <input  style={{height:"2rem",width:"18rem",padding:"5px",border:"none"}} type="text" placeholder="Your Email"/>
+                    <input  style={{height:"2rem",width:"18rem",padding:"5px",border:"none"}} type="text" placeholder=" Enter Your Email"/>
                     <Button><SendOutlined/></Button>
                 </div>
             </InnerContainer>
