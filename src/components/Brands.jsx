@@ -78,7 +78,7 @@ background-color:black ;
 
 
 export default function Brands() {
-  let brandArray=[clinique,maybelline,loreal,covergirl,nyx,colorpop]
+  let brandArray=[Motorola,micromax,apple,mi,samsung,colorpop]
   let i=-1;
     return (
         <BrandContainer>
