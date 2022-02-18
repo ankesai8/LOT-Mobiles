@@ -3,7 +3,7 @@ import styled from 'styled-components'
 import lipstick1 from "../assets/Items/lipstick1.jpg"
 import foundation from "../assets/Items/foundation.jpg"
 import mascara from "../assets/Items/mascara.jpg"
-import eyeliner from "../assets/Items/eyeliner.png"
+import eyeliner from "../assets/Items/eyeliner.jpg"
 import bronzer from "../assets/Items/bronzer.jpg"
 import blush from "../assets/Items/blush.jpg"
 import { productsData } from '../data'
