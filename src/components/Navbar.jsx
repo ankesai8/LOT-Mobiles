@@ -1,7 +1,7 @@
 import { Badge } from '@material-ui/core'
 import { LocalMallOutlined, Search, ShoppingCartOutlined } from '@material-ui/icons'
 import React,{useState} from 'react'
- import { Link } from 'react-router-dom'
+import { Link } from 'react-router-dom'
 import styled from 'styled-components'
 import { small,medium,large } from '../responsive'
 import { useSelector } from 'react-redux'
@@ -9,8 +9,8 @@ import { useDispatch } from 'react-redux'
 import { useHistory } from 'react-router'
 
 const NavContainer=styled.div`
-background-color: #a68e75;
-color: black;
+background-color: #25283D;
+color: white;
 `
 
 const Wrapper=styled.div`
@@ -41,12 +41,15 @@ font-size: 3rem;
 flex: 1;
 text-decoration: none ;
 color:white;
-
 ${medium({fontSize:"2rem",marginRight:"0",flex:"0"})}
 ${small({fontSize:"1.4rem"})}
-
 `
-
+const Middle=styled.div`
+flex:3;
+display: flex;
+justify-content: center;
+${medium({flex:"0"})}
+`
 const Input=styled.input`
 height: 32px;
 width: 20rem;
@@ -56,7 +59,6 @@ padding: 5px;
 ${medium({width:"10rem"})}
 ${small({width:"4rem"})}
 ${large({width:"7rem"})}
-
 &:focus{
    outline: none;
 }
@@ -82,14 +84,12 @@ ${small({display:"none"})}
 const Item=styled.div`
 /* cursor:pointer; */
 margin-top:10px;
-
 & > *{
 cursor: pointer;
 font-size: 1.12rem;
 ${small({fontSize:"0.6rem !important" })}
 ${medium({fontSize:"1rem !important" })}
 }
-
 `
 
 
@@ -106,19 +106,17 @@ const [search,setSearch]=useState(value)
              <Wrapper>
              <Link to="/" style={{textDecoration:"none"}}>
                  <Left>
-                     <p style={{textDecoration:"none"}}>Shop-cart</p>
-
+                     <p style={{textDecoration:"none"}}>Shop-Cart</p>
+                 </Left>
+                 </Link>
+                 <Middle>
                      <Input type="text" value={search} onChange={(event)=>{setSearch(event.target.value)}} placeholder="search your Products"/>
                      {search.length >1 ?
                      <Link to={`/products/name/${search.toLocaleLowerCase()}`}><SearchIcon onClick={()=>{dispatch({type:"addValue",value:search})}} style={{ fontSize: 32 }} /></Link>
                      :
                      <Link to={`/products/`}><SearchIcon onClick={()=>{dispatch({type:"addValue",value:search})}} style={{ fontSize: 32 }} /></Link>
                      }
-                  
-                 </Left>
-                 </Link>
-              
-                   
+                     </Middle>
                  <Right>
                  {
                         user.currentUser &&
@@ -126,11 +124,11 @@ const [search,setSearch]=useState(value)
                         <Item><p style={{width:"5.5rem"}}>Hi, {user.currentUser.username}</p></Item>
                         </>
                     }
-                    <Link  style={{textDecoration:"none",color:"inherit"}} to={"/products"}><Item> <p>Explore</p></Item></Link>
+                    <Link  style={{textDecoration:"none",color:"inherit"}} to={"/products"}><Item> <p>Explore Items</p></Item></Link>
                     {!user.currentUser &&
                     <>
-                   <Link to="/login" style={{textDecoration:"none",color:"inherit"}}> <Item> <p>LogIn</p></Item></Link>
-                   <Link to="/register" style={{textDecoration:"none",color:"inherit"}}> <Item> <p>Register</p></Item></Link>
+                   <Link to="/login" style={{textDecoration:"none",color:"inherit"}}> <Item> <p>signIn</p></Item></Link>
+                   <Link to="/register" style={{textDecoration:"none",color:"inherit"}}> <Item> <p>signUp</p></Item></Link>
                     </>
                     }
                     {
