@@ -1,7 +1,7 @@
 
 import React,{useState} from 'react'
 import styled from 'styled-components';
-import background from "../assets/login/login.jfif"
+import background from "../assets/login/black.jpg"
 import * as YUP from "yup"
 import {Formik,Form,Field,ErrorMessage} from "formik"
 import { large } from '../responsive';
@@ -96,7 +96,7 @@ export default function Login() {
         <Container>
             <OuterContainer>
                 <Brand>
-                MakeYouUp
+                Shop-Cart
                 </Brand>
                 <FormContainer>
                     <div style={{textAlign:"center",fontSize:"1.5rem"}}>Sign In</div>
