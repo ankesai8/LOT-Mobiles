@@ -1,9 +1,9 @@
 import React from 'react'
 import styled from 'styled-components'
- import clinique from "../assets/Brands/clinique.png"
+ import clinique from "../assets/Brands/clinique.jpg"
  import maybelline from "../assets/Brands/maybelline.jpg"
  import loreal from "../assets/Brands/loreal.jpg"
- import covergirl from "../assets/Brands/covergirl.png"
+ import covergirl from "../assets/Brands/covergirl.jpg"
  import nyx from "../assets/Brands/nyx.png"
  import colorpop from "../assets/Brands/colorpop.jpg"
 import { BrandData } from '../data'
