@@ -4,7 +4,6 @@ import Footer from '../components/Footer'
 import Items from '../components/Items'
 import LowerAnnouncement from '../components/LowerAnnouncement'
 import Navbar from '../components/Navbar'
-import Newsletter from '../components/Newsletter'
 import Slider from '../components/Slider'
 import UpperAnnouncement from '../components/UpperAnnouncement'
 
@@ -23,7 +22,6 @@ export default function Home() {
           <Slider />
           <Brands/>
           <Items/>
-          <Newsletter/>
           <Footer/>
           </Maincontainer>
         </div>
