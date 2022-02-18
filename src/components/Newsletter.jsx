@@ -11,8 +11,8 @@ display: flex;
 flex-direction: column;
 align-items: center;
 justify-content: center;
-background-color: #a68e75;
-color: white;
+background-color: white;
+color: black;
 padding: 1.4rem;
 `
 
