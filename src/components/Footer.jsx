@@ -5,8 +5,8 @@ import {medium, small} from "../responsive"
 
 const MainContainer=styled.div`
 height: 100%;
-background-color: #8F3985;
-color: black;
+background-color: #93c90b;
+color: white;
 `
 const InnerContainer=styled.div`
 display:flex;
@@ -43,25 +43,24 @@ export default function Footer() {
         <MainContainer>
             <InnerContainer>
                 <Left>
-                    <div><h2 style={{textAlign:"start"}}>MakeYouUp</h2></div>
-                    <div><p>Nobody is born with a perfect face but everyone is blessed with attractive features, waiting to be revealed.  we bring you the best of makeup online, featuring a wide range of personal care products of high quality. Hide your blemishes and flaws to create a smooth, healthy skin surface. Add colours to contour your face to achieve an attractive look. Highlight your best features with products that enhance them. The sky is the limit when it comes to transforming your face to reveal the kind of look you prefer.</p></div>
+                    <div><h2 style={{textAlign:"start"}}>Shop-Cart</h2></div>
+                    <div><p>Lorem ipsum was conceived as filler text, formatted in a certain way to enable the presentation of graphic elements in documents, without the need for formal copy. Using Lorem Ipsum allows designers to put together layouts and the form of the content before the content has been created, giving the design and production process more freedom.It is widely believed that the history of Lorem Ipsum originates with Cicero in the 1st Century BC and his text De Finibus bonorum et malorum. This philosophical work, also known as On the Ends of Good and Evil, was split into five books. The Lorem Ipsum we know today is derived from parts of the first book Liber Primus and its discussion on hedonism, the words of which had been altered, added and removed to make it nonsensical and improper Latin. It is not known exactly when the text gained its current traditional form. However references to the phrase "lorem ipsum" can be found in the 1914 Loeb Classical Library Edition of the De Finibus in sections.</p></div>
                 </Left>
                 <Right>
                 <div><h2 style={{textAlign:"start"}}>Contact Us</h2></div>
-                <div><p><LocationCity/> Trichy,Tamilnadu.</p></div>
-                <div><p><Email/> mayublade@gmail.com</p></div>
-                <div><p><Phone/> +91-8870293637</p></div>
+                <div><p><LocationCity/> Hyderabad,Telangana.</p></div>
+                <div><p><Email/> shopcart@gmail.com</p></div>
+                <div><p><Phone/> +91-9966339966</p></div>
                 </Right>
             </InnerContainer>
         </MainContainer>
         <OwnerDiv>
             <div>
-                Developed by Mayuresan
             </div>
             <div className="d-flex gap-1">
-                <div><EmailOutlined/>mayublade@gmail.com</div>
-                <div><LinkedIn/>www.linkedin.com/in/mayuresan</div>
-                <div><PhoneAndroidOutlined/>+91-8870293637</div>
+                <div><EmailOutlined/>shopcart@gmail.com</div>
+                <div><LinkedIn/>www.linkedin.com/in/</div>
+                <div><PhoneAndroidOutlined/>+91-9966339966</div>
             </div>
         </OwnerDiv>
         </>
