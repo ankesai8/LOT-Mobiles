@@ -6,7 +6,7 @@ import nykaa from "../assets/sliderImages/nykaa.png"
 import colorpop from "../assets/sliderImages/colorpop.jpg"
 import eyeliner from "../assets/sliderImages/eyeliner.jpg"
 import all from "../assets/sliderImages/all.jpg"
-import all1 from "../assets/sliderImages/all2.gif"
+import all1 from "../assets/sliderImages/all2.jpg"
 import styled from 'styled-components';
 import { small } from '../responsive';
 
