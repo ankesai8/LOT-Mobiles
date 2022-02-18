@@ -2,7 +2,7 @@
 import React from 'react'
 import "react-responsive-carousel/lib/styles/carousel.min.css";
 import { Carousel } from 'react-responsive-carousel';
-import nykaa from "../assets/sliderImages/nykaa.jpg"
+import nykaa from "../assets/sliderImages/nykaa.png"
 import colorpop from "../assets/sliderImages/colorpop.jpg"
 import eyeliner from "../assets/sliderImages/eyeliner.jpg"
 import all from "../assets/sliderImages/all.jpg"
