@@ -35,7 +35,7 @@ text-align: center;
 font-size: 2rem;
 `
 const FormContainer=styled.div`
-background-color: black;
+background-color: white;
 padding: 14px;
 margin-top: 1rem;
 `
