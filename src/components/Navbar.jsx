@@ -9,8 +9,8 @@ import { useDispatch } from 'react-redux'
 import { useHistory } from 'react-router'
 
 const NavContainer=styled.div`
-background-color: #25283D;
-color: white;
+background-color: #a68e75;
+color: black;
 `
 
 const Wrapper=styled.div`
@@ -111,17 +111,19 @@ const [search,setSearch]=useState(value)
              <Wrapper>
              <Link to="/" style={{textDecoration:"none"}}>
                  <Left>
-                     <p style={{textDecoration:"none"}}>MakeYouUp</p>
-                 </Left>
-                 </Link>
-                 <Middle>
-                     <Input type="text" value={search} onChange={(event)=>{setSearch(event.target.value)}} placeholder="search..."/>
+                     <p style={{textDecoration:"none"}}>Shop-cart</p>
+
+                     <Input type="text" value={search} onChange={(event)=>{setSearch(event.target.value)}} placeholder="search your Products"/>
                      {search.length >1 ?
                      <Link to={`/products/name/${search.toLocaleLowerCase()}`}><SearchIcon onClick={()=>{dispatch({type:"addValue",value:search})}} style={{ fontSize: 32 }} /></Link>
                      :
                      <Link to={`/products/`}><SearchIcon onClick={()=>{dispatch({type:"addValue",value:search})}} style={{ fontSize: 32 }} /></Link>
                      }
-                     </Middle>
+                  
+                 </Left>
+                 </Link>
+              
+                   
                  <Right>
                  {
                         user.currentUser &&
