@@ -5,7 +5,7 @@ import {medium, small} from "../responsive"
 
 const MainContainer=styled.div`
 height: 100%;
-background-color: #93c90b;
+background-color: black;
 color: white;
 `
 const InnerContainer=styled.div`
