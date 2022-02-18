@@ -2,9 +2,9 @@ import React from 'react'
 import styled,{keyframes} from 'styled-components'
 
 const colorChange=keyframes`
-      0%  {background-color: #a68e75;}
-     50% {background-color: #93c90b;}
-    100% {background-color: #a68e75;}
+      0%  {background-color: whitesmoke;}
+     50% {background-color: black;}
+    100% {background-color: whitesmoke;}
 `
 
 const Container=styled.div`
