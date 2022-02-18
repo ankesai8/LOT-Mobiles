@@ -9,7 +9,7 @@ import { useDispatch } from 'react-redux'
 import { useHistory } from 'react-router'
 
 const NavContainer=styled.div`
-background-color: #25283D;
+background-color: black;
 color: white;
 `
 
