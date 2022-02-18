@@ -4,7 +4,7 @@ import styled from 'styled-components'
  import maybelline from "../assets/Brands/maybelline.jpg"
  import loreal from "../assets/Brands/loreal.jpg"
  import covergirl from "../assets/Brands/covergirl.png"
- import nyx from "../assets/Brands/nyx.jpg"
+ import nyx from "../assets/Brands/nyx.png"
  import colorpop from "../assets/Brands/colorpop.jpg"
 import { BrandData } from '../data'
 import { medium } from '../responsive'
@@ -84,7 +84,7 @@ export default function Brands() {
         <BrandContainer>
         <hr/>
         <Title>
-            Featured Brands
+             Brands We Feature
         </Title>
         <BrandOuter>
         {BrandData.map((brand)=>{
@@ -103,7 +103,7 @@ export default function Brands() {
                 </BrandPara>
                 <BrandButton>
                 <Button>
-                  <Link style={{textDecoration:"none" ,color:"inherit"}} to={`/products/brand/${brand.searchName}`}> <h3> shop now</h3></Link>
+                  <Link style={{textDecoration:"none" ,color:"inherit"}} to={`/products/brand/${brand.searchName}`}> <h3>shop now</h3></Link>
                 </Button>
                 </BrandButton>
              </BrandText>
