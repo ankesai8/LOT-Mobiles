@@ -3,10 +3,10 @@ import React from 'react'
 import "react-responsive-carousel/lib/styles/carousel.min.css";
 import { Carousel } from 'react-responsive-carousel';
 import nykaa from "../assets/sliderImages/nykaa.jpg"
-import colorpop from "../assets/sliderImages/colorpop.gif"
+import colorpop from "../assets/sliderImages/colorpop.jpg"
 import eyeliner from "../assets/sliderImages/eyeliner.jpg"
 import all from "../assets/sliderImages/all.jpg"
-import all1 from "../assets/sliderImages/all2.gif"
+import all1 from "../assets/sliderImages/all2.jpg"
 import styled from 'styled-components';
 import { small } from '../responsive';
 
