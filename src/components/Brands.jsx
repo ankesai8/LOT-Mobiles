@@ -1,11 +1,11 @@
 import React from 'react'
 import styled from 'styled-components'
- import clinique from "../assets/Brands/clinique.jpg"
- import maybelline from "../assets/Brands/maybelline.jpg"
- import loreal from "../assets/Brands/loreal.jpg"
- import covergirl from "../assets/Brands/covergirl.jpg"
- import nyx from "../assets/Brands/nyx.png"
- import colorpop from "../assets/Brands/colorpop.jpg"
+ import Motorola from "../assets/Brands/clinique.jpg"
+ import micromax from "../assets/Brands/maybelline.jpg"
+ import apple from "../assets/Brands/loreal.jpg"
+ import mi from "../assets/Brands/covergirl.jpg"
+ import samsung from "../assets/Brands/nyx.png"
+ import oppo from "../assets/Brands/colorpop.jpg"
 import { BrandData } from '../data'
 import { medium } from '../responsive'
 import { Link } from 'react-router-dom'
@@ -78,7 +78,7 @@ background-color:black ;
 
 
 export default function Brands() {
-  let brandArray=[Motorola,micromax,apple,mi,samsung,colorpop]
+  let brandArray=[Motorola,micromax,apple,mi,samsung,oppo]
   let i=-1;
     return (
         <BrandContainer>
@@ -92,7 +92,7 @@ export default function Brands() {
         return(
         <BrandInner>
               <BrandImage>
-                 <img src={brandArray[i]} height="430rem" width="100%"  style={{objectFit:"cover"}}  alt="clinique"   />
+                 <img src={brandArray[i]} height="430rem" width="100%"  style={{objectFit:"cover"}}  alt="Motorola"   />
              </BrandImage>
              <BrandText>
                 <BrandTitle>
