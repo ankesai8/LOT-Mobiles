@@ -46,12 +46,7 @@ ${medium({fontSize:"2rem",marginRight:"0",flex:"0"})}
 ${small({fontSize:"1.4rem"})}
 
 `
-const Middle=styled.div`
-flex:3;
-display: flex;
-justify-content: center;
-${medium({flex:"0"})}
-`
+
 const Input=styled.input`
 height: 32px;
 width: 20rem;
