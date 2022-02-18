@@ -6,7 +6,7 @@ import nykaa from "../assets/sliderImages/nykaa.jpg"
 import colorpop from "../assets/sliderImages/colorpop.jpg"
 import eyeliner from "../assets/sliderImages/eyeliner.jpg"
 import all from "../assets/sliderImages/all.jpg"
-import all1 from "../assets/sliderImages/all2.jpg"
+import all1 from "../assets/sliderImages/all2.gif"
 import styled from 'styled-components';
 import { small } from '../responsive';
 
@@ -19,7 +19,7 @@ export default function Slider() {
         <SliderDiv >
             <Carousel showThumbs={false} showStatus={false} autoPlay infiniteLoop>
                 <div>
-                <img height="300rem" style={{objectFit:"cover"}} src={all} />
+                <img height="300rem" style={{objectFit:"cover"}} src={all1} />
                 </div>
                  <div>
                  <img height="300rem" style={{objectFit:"cover"}} src={nykaa} />
@@ -31,7 +31,7 @@ export default function Slider() {
                 <img height="300rem" style={{objectFit:"cover"}} src={eyeliner} />
                 </div>
                 <div>
-                <img height="300rem" style={{objectFit:"cover"}} src={all1} />
+                <img height="300rem" style={{objectFit:"cover"}} src={all} />
                 </div>
             </Carousel>
         </SliderDiv>
