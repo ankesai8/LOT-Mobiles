@@ -10,8 +10,8 @@ const runningText =keyframes`
 const Container=styled.div`
 height: 2.5rem;
 font-weight: 700;
-color: black;
-background-color: #93c90b;
+color: white;
+background-color: black;
 overflow: hidden;
 ${small({height:"4rem"})}
 &  p{
@@ -24,7 +24,7 @@ top: -5px;
 export default function LowerAnnouncement() {
     return (
         <Container>
-        <p style={{marginTop:"10px"}}>Big! big!! News : Grab sales at 60% OFF </p>
+        <p style={{marginTop:"10px"}}>Big! big!! News : HURRY UP ! Grab sales at 60% OFF </p>
      </Container>
     )
 }
