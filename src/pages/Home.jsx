@@ -22,6 +22,7 @@ export default function Home() {
           <Slider />
           <Brands/>
           <Items/>
+          <br/>
           <Footer/>
           </Maincontainer>
         </div>
