@@ -178,7 +178,7 @@ export default function Cart() {
                             <p>credentials to checkout:</p><br>
                             <p>card number: <b>4242424242424242</b></p><br>
                             <p>Expiry:<b>02/22</b></p><br>                  
-                            <p>CVV: <b>222</b></p>
+                            <p>CVV: <b>222</b></p><br>
                         </div>
                 </SummaryContainer>
               </>:<><h2  style={{textAlign:"center" ,width:"100%"}}>Your Cart is empty</h2></>}
