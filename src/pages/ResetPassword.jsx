@@ -1,12 +1,13 @@
 import React from 'react'
 import styled from 'styled-components';
-import background from "../assets/login/login.jfif"
+import background from "../assets/login/black.jpg"
 import * as YUP from "yup"
 import {Formik,Form,Field,ErrorMessage} from "formik"
 import { large } from '../responsive';
 import {useParams} from "react-router-dom"
 import axios from 'axios';
 import { Link } from 'react-router-dom';
+
 const Container=styled.div`
 background-image:url(${background});
 height: 100vh;
@@ -48,7 +49,7 @@ color: #e46acf;
 
 const Button=styled.button`
 border: none;
-background-color: black;
+background-color: aqua;
 color: white;
 padding: 8px;
 margin-bottom: 1rem;
@@ -80,10 +81,10 @@ export default function ResetPassword() {
         <Container>
             <OuterContainer>
                 <Brand>
-                MakeYouUp
+                Shop-Cart
                 </Brand>
                 <FormContainer>
-                    <div style={{textAlign:"center",fontSize:"1.5rem"}}>Reset Password</div>
+                    <div style={{textAlign:"center",fontSize:"2.5rem"}}>Reset Password</div>
                     <hr/>
                     <Formik
                         initialValues={
@@ -118,7 +119,7 @@ export default function ResetPassword() {
                                
                            
                             <div className="form-group">
-                            <Input type="password" placeholder="Password" className="form-control" id="password" name="password" />
+                            <Input type="password" placeholder="Enter Password" className="form-control" id="password" name="password" />
                             <Error><ErrorMessage name="password"/></Error>
                             </div>
                             <div className="form-group">
@@ -126,12 +127,20 @@ export default function ResetPassword() {
                             <Error><ErrorMessage name="confirmPassword"/></Error>
                             </div>
                             <div className="text-center">
-                                <Button type="submit">Change Password</Button>
+                                <Button type="submit">Set New Password</Button>
                             </div>
-                            <p className="text-dark">{info}</p>
+                            <p className="text-info">{info}</p>
+                        <div>
+                                
                             <div className="text-start">
                             <Link to="/login"> <Para>Back to Login</Para></Link>
+                             </div>
+
+                            <div className="text-end">
+                            <Link to="/register"> <Para>Back to Register</Para></Link>
                             </div>
+
+                        <div> 
                         </Form>
                             )
                         }}
