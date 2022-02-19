@@ -40,7 +40,7 @@ ${medium({flexDirection:"column"})}
 
 const Button=styled.button`
 border: none;
-background-color: black;
+background-color: aqua;
 color: white;
 padding:10px;
 cursor: pointer;
@@ -130,7 +130,7 @@ export default function Cart() {
                    <Link to="/products"> <Button>Continue To Shop</Button></Link>
                 </div>
                 <div>
-                    <h1>Your Bag</h1>
+                    <h1>Your Cart</h1>
                 </div>
                 <div>
                
@@ -178,14 +178,14 @@ export default function Cart() {
                         <>
                         <Button onClick={()=>{setAlert(true)}}>checkOut</Button>
                         </>}</div>
-                        <div style={{color:"yellow green"}}>
+                        <div style={{color:"green"}}>
                             <p>Checkout Demo credentials</p>
                             <p>card number: <b>4242424242424242</b></p>
                             <p>Expiry:<b> 02/22 </b></p>                   
-                            <p>CVV: <b>222 r</b></p>
+                            <p>CVV: <b>222</b></p>
                         </div>
                 </SummaryContainer>
-              </>:<><h2  style={{textAlign:"center" ,width:"100%"}}>Your Crart is empty</h2></>}
+              </>:<><h2  style={{textAlign:"center" ,width:"100%"}}>Your Cart is empty</h2></>}
             </Container>
 
             <Newsletter/>
