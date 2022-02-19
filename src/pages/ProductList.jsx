@@ -229,69 +229,14 @@ useEffect(()=>{
                           <option value="high">Highest Price</option>
                           </select>
                       </SortBy>
+                       </hr>
                       <div style={{margin:"1rem 0"}}><b>Filters</b></div>
-                      <BrandContainer>
-                      <p><b>Brands</b></p>
-                      <CheckboxContainer>
-                      <div><label >Motorola</label></div>
-                      <div><input type="checkbox"  name="Motorola" value="Motorola" checked={brand.Motorola} onChange={(event)=>{handleBrand(event)}}/></div>
-                      </CheckboxContainer>
-                      <CheckboxContainer>
-                      <div><label >Micromax</label></div>
-                      <div><input type="checkbox"  name="micromax" value="micromax" checked={brand.micromax} onChange={(event)=>{handleBrand(event)}}/></div>
-                      </CheckboxContainer>
-                      <CheckboxContainer>
-                      <div><label >Apple</label></div>
-                      <div><input type="checkbox"  name="apple" value="apple" checked={brand.apple} onChange={(event)=>{handleBrand(event)}} /></div>
-                      </CheckboxContainer>
-                      <CheckboxContainer>
-                      <div><label >Mi</label></div>
-                      <div><input type="checkbox"  name="mi" value="mi" checked={brand.mi} onChange={(event)=>{handleBrand(event)}}/></div>
-                      </CheckboxContainer>
-                      <CheckboxContainer>
-                      <div><label >Samsung</label></div>
-                      <div><input type="checkbox"  name="samsung" value="samsung" checked={brand.samsung} onChange={(event)=>{handleBrand(event)}}/></div>
-                      </CheckboxContainer>
-                      <CheckboxContainer>
-                      <div><label >Oppo</label></div>
-                      <div><input type="checkbox"  name="oppo" value="oppo" checked={brand.oppo} onChange={(event)=>{handleBrand(event)}}/></div>
-                      </CheckboxContainer>
-                      </BrandContainer>
-                      
-                      <BrandContainer style={{margin:"1.5rem 0"}}>
-                      <p><b>Items</b></p>
-                      <CheckboxContainer>
-                      <div><label >Motorola</label></div>
-                      <div><input type="checkbox"  name="Motorola" value="Motorola" checked={product_type.Motorola} onChange={(event)=>{handleProductType(event)}}/></div>
-                      </CheckboxContainer>
-                      <CheckboxContainer>
-                      <div><label >Micromax</label></div>
-                      <div><input type="checkbox"  name="micromax" value="micromax" checked={product_type.micromax} onChange={(event)=>{handleProductType(event)}}/></div>
-                      </CheckboxContainer>
-                      <CheckboxContainer>
-                      <div><label >Apple</label></div>
-                      <div><input type="checkbox"  name="apple" value="apple" checked={product_type.apple} onChange={(event)=>{handleProductType(event)}}/></div>
-                      </CheckboxContainer>
-                      <CheckboxContainer>
-                      <div><label >MI</label></div>
-                      <div><input type="checkbox"  name="mi" value="mi" checked={product_type.mi} onChange={(event)=>{handleProductType(event)}}/></div>
-                      </CheckboxContainer>
-                      <CheckboxContainer>
-                      <div><label >SamSung</label></div>
-                      <div><input type="checkbox"  name="samsung" value="samsung" checked={product_type.samsung} onChange={(event)=>{handleProductType(event)}}/></div>
-                      </CheckboxContainer>
-                      <CheckboxContainer>
-                      <div><label >Oppo</label></div>
-                      <div><input type="checkbox"  name="oppo" value="oppo" checked={product_type.oppo} onChange={(event)=>{handleProductType(event)}}/></div>
-                      </CheckboxContainer>
-                      </BrandContainer>
-
                       <BrandContainer style={{margin:"1.5rem 0"}}>
                       <p><b>Price Range</b></p>
                       <div>
             <MultiRangeSlider
 			min={1}
-			max={35}
+			max={100}
 			step={5}
 			ruler={false}
 			label={true}
@@ -303,11 +248,9 @@ useEffect(()=>{
 			}}
 		/>
         </div>
-                      </BrandContainer>
+                    
                 </FilterContainer>
-                <ProductsContainer>
-                <Products filters={filter}/>
-                </ProductsContainer>
+                <ProductsContainer><Products filters={filter}/></ProductsContainer>
             </OuterContainer>
           
             <Footer/>
