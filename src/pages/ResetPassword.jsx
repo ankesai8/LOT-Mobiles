@@ -133,7 +133,8 @@ export default function ResetPassword() {
                         <div>
                                 
                             <div className="text-start">
-                            <Link to="/login"> <Para>Back to Login</Para></Link>
+                            <Link to="/login"> <Para>Login</Para></Link>
+                            <Link to="/register"> <Para>   Register</Para></Link>
                              </div>
 
                             <div className="text-end">
