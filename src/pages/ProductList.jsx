@@ -229,7 +229,6 @@ useEffect(()=>{
                           <option value="high">Highest Price</option>
                           </select>
                       </SortBy>
-                       </hr>
                       <div style={{margin:"1rem 0"}}><b>Filters</b></div>
                       <BrandContainer style={{margin:"1.5rem 0"}}>
                       <p><b>Price Range</b></p>
