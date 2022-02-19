@@ -247,7 +247,7 @@ useEffect(()=>{
 			}}
 		/>
         </div>
-                    
+                 </BrandContainer>    
                 </FilterContainer>
                 <ProductsContainer><Products filters={filter}/></ProductsContainer>
             </OuterContainer>
