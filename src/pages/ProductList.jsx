@@ -1,10 +1,7 @@
-/* eslint-disable no-unused-vars */
-/* eslint-disable react-hooks/exhaustive-deps */
 import {useState,useEffect} from 'react'
 import  styled from 'styled-components'
 import LowerAnnouncement from '../components/LowerAnnouncement'
 import Navbar from '../components/Navbar'
-// import PriceSlider from '../components/PriceSlider'
 import Slider from '../components/Slider'
 import UpperAnnouncement from '../components/UpperAnnouncement'
 import "./ProductList.css"
@@ -12,7 +9,6 @@ import Products from '../components/Products'
 import Newsletter from '../components/Newsletter'
 import Footer from '../components/Footer'
 import { large } from '../responsive'
-// import "./PriceSlider.css"
 import MultiRangeSlider from "multi-range-slider-react";
 import { useLocation } from 'react-router'
 import { useSelector } from 'react-redux'
@@ -78,23 +74,23 @@ const [filter,setFilter]=useState(
 //initial brand check box values
 const [brand,setBrand]= useState(
     {
-        nyx:false,
-        clinique:false,
-        maybelline:false,
-        covergirl:false,
-        loreal:false,
-        colourpop:false
+        Motorola:false,
+        micromax:false,
+        apple:false,
+        mi:false,
+        samsung:false,
+        oppo:false
     }
 ) 
 //initaial product type checkbox values
 const [product_type,setProductType]=useState(
     {
-        lipstick:false,
-        foundation:false,
-        mascara:false,
-        eyeliner:false,
-        bronzer:false,
-        blush:false
+        Motorola:false,
+        micromax:false,
+        apple:false,
+        mi:false,
+        samsung:false,
+        opppo:false
 
 
     }
@@ -233,27 +229,27 @@ useEffect(()=>{
                       <BrandContainer>
                       <p><b>Brands</b></p>
                       <CheckboxContainer>
-                      <div><label >Nyx</label></div>
+                      <div><label >Motorola</label></div>
                       <div><input type="checkbox"  name="nyx" value="nyx" checked={brand.nyx} onChange={(event)=>{handleBrand(event)}}/></div>
                       </CheckboxContainer>
                       <CheckboxContainer>
-                      <div><label >Clinique</label></div>
+                      <div><label >Micromax</label></div>
                       <div><input type="checkbox"  name="clinique" value="clinique" checked={brand.clinique} onChange={(event)=>{handleBrand(event)}}/></div>
                       </CheckboxContainer>
                       <CheckboxContainer>
-                      <div><label >Maybelline</label></div>
+                      <div><label >Apple</label></div>
                       <div><input type="checkbox"  name="maybelline" value="maybellibne" checked={brand.maybelline} onChange={(event)=>{handleBrand(event)}} /></div>
                       </CheckboxContainer>
                       <CheckboxContainer>
-                      <div><label >Covergirl</label></div>
+                      <div><label >MI</label></div>
                       <div><input type="checkbox"  name="covergirl" value="covergirl" checked={brand.covergirl} onChange={(event)=>{handleBrand(event)}}/></div>
                       </CheckboxContainer>
                       <CheckboxContainer>
-                      <div><label >L`oreal</label></div>
+                      <div><label >Samsung</label></div>
                       <div><input type="checkbox"  name="loreal" value="loreal" checked={brand.loreal} onChange={(event)=>{handleBrand(event)}}/></div>
                       </CheckboxContainer>
                       <CheckboxContainer>
-                      <div><label >Colourpop</label></div>
+                      <div><label >OppO</label></div>
                       <div><input type="checkbox"  name="colourpop" value="colourpop" checked={brand.colourpop} onChange={(event)=>{handleBrand(event)}}/></div>
                       </CheckboxContainer>
                       </BrandContainer>
@@ -261,27 +257,27 @@ useEffect(()=>{
                       <BrandContainer style={{margin:"1.5rem 0"}}>
                       <p><b>Items</b></p>
                       <CheckboxContainer>
-                      <div><label >Lipstick</label></div>
+                      <div><label >Motorola</label></div>
                       <div><input type="checkbox"  name="lipstick" value="lipstick" checked={product_type.lipstick} onChange={(event)=>{handleProductType(event)}}/></div>
                       </CheckboxContainer>
                       <CheckboxContainer>
-                      <div><label >Foundation</label></div>
+                      <div><label >Micromax</label></div>
                       <div><input type="checkbox"  name="foundation" value="foundation" checked={product_type.foundation} onChange={(event)=>{handleProductType(event)}}/></div>
                       </CheckboxContainer>
                       <CheckboxContainer>
-                      <div><label >Mascara</label></div>
+                      <div><label >Apple</label></div>
                       <div><input type="checkbox"  name="mascara" value="mascara" checked={product_type.mascara} onChange={(event)=>{handleProductType(event)}}/></div>
                       </CheckboxContainer>
                       <CheckboxContainer>
-                      <div><label >Eyeliner</label></div>
+                      <div><label >MI</label></div>
                       <div><input type="checkbox"  name="eyeliner" value="eyeliner" checked={product_type.eyeliner} onChange={(event)=>{handleProductType(event)}}/></div>
                       </CheckboxContainer>
                       <CheckboxContainer>
-                      <div><label >Bronzer</label></div>
+                      <div><label >Samsung</label></div>
                       <div><input type="checkbox"  name="bronzer" value="bronzer" checked={product_type.bronzer} onChange={(event)=>{handleProductType(event)}}/></div>
                       </CheckboxContainer>
                       <CheckboxContainer>
-                      <div><label >Blush</label></div>
+                      <div><label >OppO</label></div>
                       <div><input type="checkbox"  name="blush" value="blush" checked={product_type.blush} onChange={(event)=>{handleProductType(event)}}/></div>
                       </CheckboxContainer>
                       </BrandContainer>
