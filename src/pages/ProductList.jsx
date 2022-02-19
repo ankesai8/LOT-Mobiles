@@ -100,7 +100,7 @@ const [minValue, set_minValue] = useState(10);
 const [maxValue, set_maxValue] = useState(20);
 let tempMin,tempMax;
 //initial sort
-const [sort,setSort]=useState("")
+const [setSort]=useState("")
 let tempSort="";
 const handleFilter=(type)=>{
 
@@ -207,7 +207,7 @@ useEffect(()=>{
     else{
         setFilter({...filter,name:""})
     }
-},[location])
+},[location,filter,handleBrand,handleFilter,handleProductType])
 
     return (
         <Maincontainer>
