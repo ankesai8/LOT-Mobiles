@@ -1,6 +1,6 @@
 import React,{useState} from 'react'
 import styled from 'styled-components';
-import background from "../assets/login/login.jfif"
+import background from "../assets/login/black.jpg"
 import * as YUP from "yup"
 import {Formik,Form,Field,ErrorMessage} from "formik"
 import { large } from '../responsive';
@@ -46,7 +46,7 @@ margin:1rem 0;
 const Para=styled.p`
 cursor: pointer;
 display: inline-block;
-color: #e46acf;
+color: aqua;
 `
 
 const Button=styled.button`
@@ -79,10 +79,10 @@ export default function Register() {
         <Container>
             <OuterContainer>
                 <Brand>
-                MakeYouUp
+                Shop-Cart
                 </Brand>
                 <FormContainer>
-                    <div style={{textAlign:"center",fontSize:"1.5rem"}}>Sign Up</div>
+                    <div style={{textAlign:"center",fontSize:"1.5rem"}}>Register</div>
                     <hr/>
                     <Formik
                         initialValues={
@@ -117,15 +117,15 @@ export default function Register() {
                             <Form>
                                 <div className="form-group">
                                     
-                            <Input type="text" placeholder="UserName" className="form-control" id="username" name="username"/>
+                            <Input type="text" placeholder="Enter Name" className="form-control" id="username" name="username"/>
                             <Error><ErrorMessage name="username"/></Error>
                             </div>
                             <div className="form-group">
-                            <Input type="text" placeholder="Email" className="form-control" id="email" name="email"/>
+                            <Input type="text" placeholder="Enter Email" className="form-control" id="email" name="email"/>
                             <Error><ErrorMessage name="email"/></Error>
                             </div>
                             <div className="form-group">
-                            <Input type="password" placeholder="Password" className="form-control" id="password" name="password" />
+                            <Input type="password" placeholder="Enter Password" className="form-control" id="password" name="password" />
                             <Error><ErrorMessage name="password"/></Error>
                             </div>
                             <div className="form-group">
@@ -144,13 +144,13 @@ export default function Register() {
                                 </>}
                             </div>
                             <div className="text-center">
-                                <Button type="submit">Sign Up</Button>
+                                <Button type="submit">Register</Button>
                             </div>
                             <div>
                                 <p style={{color:"orange"}}>{info}</p>
                             </div>
                             <div className="text-start">
-                            <Link to="/login"><Para>Back to login</Para></Link>
+                            <Link to="/login"><Para>Back to LOGIN</Para></Link>
                             </div>
                         </Form>
                             )
