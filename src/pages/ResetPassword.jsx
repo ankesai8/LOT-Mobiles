@@ -140,10 +140,10 @@ export default function ResetPassword() {
                             <Link to="/register"> <Para>Back to Register</Para></Link>
                             </div>
 
-                        <div> 
+                        </div> 
                         </Form>
                             )
-                            </div>
+                         
                         }}
                     </Formik>
                 </FormContainer>
