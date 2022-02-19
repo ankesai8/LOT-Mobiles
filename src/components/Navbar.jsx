@@ -124,11 +124,15 @@ const [search,setSearch]=useState(value)
                         <Item><p style={{width:"5.5rem"}}>Hi, {user.currentUser.username}</p></Item>
                         </>
                     }
-                    <Link  style={{textDecoration:"none",color:"inherit"}} to={"/products"}><Item> <p>Explore Items</p></Item></Link>
+                    
+                   <Link  style={{textDecoration:"none",color:"inherit"}} to={"/"}><Item> <p>Home</p></Item></Link>
+                                         
+                    <Link  style={{textDecoration:"none",color:"inherit"}} to={"/products"}><Item> <p>Explore</p></Item></Link>
+
                     {!user.currentUser &&
                     <>
                    <Link to="/login" style={{textDecoration:"none",color:"inherit"}}> <Item> <p>signIn</p></Item></Link>
-                   <Link to="/register" style={{textDecoration:"none",color:"inherit"}}> <Item> <p>signUp</p></Item></Link>
+                   <Link to="/register" style={{textDecoration:"none",color:"inherit"}}> <Item> <p>Register</p></Item></Link>
                     </>
                     }
                     {
@@ -137,7 +141,7 @@ const [search,setSearch]=useState(value)
                         <Item><p onClick={()=>{
                             dispatch({type:"logOut"})
                             history.push("/")
-                            }}>LogOut</p></Item>
+                            }}>Logout</p></Item>
                         </>
                     }
                     <Item>
