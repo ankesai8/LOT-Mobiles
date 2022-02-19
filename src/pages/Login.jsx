@@ -156,9 +156,9 @@ export default function Login() {
                             <div className="text-center">
                             <Link to="/register" style={{textDecoration:"none",color:"inherit"}}> <Para>New Here? Create Account</Para></Link>
                             </div>
-                            <div style={{lineHeight:"3px" ,color:"grey"}}>
-                                <p>For Testing ,Please Use below credentials</p>
-                                <p><b>User</b>: test@gmail.com <b>Password</b>:test123</p>
+                            <div style={{lineHeight:"3px" ,color:"black"}}>
+                                <p>Demo Credentials</p>
+                                <p><b>User</b>: test@gmail.com <b>Password</b>:test123</p><br/>
                                 <p><b>Admin</b>: admin@gmail.com <b>Password</b>:admin123</p>
                             </div>
                         </Form>
