@@ -48,13 +48,8 @@ const ProductPrice=styled.div`
 `
 const ProductDesc=styled.div`
 `
-const ShadesContainer=styled.div`
-`
-const Shades=styled.div`
-display: flex;
-gap: 0.5rem;
-flex-wrap: wrap;
-`
+
+
 const ShadeSingle=styled.div`
 height: 1.5rem;
 width: 1.5rem;
@@ -129,10 +124,7 @@ export default function Product() {
 
     },[id])
 
-    const handleShade=(value)=>{
-        setShade(value)
-    }
-
+    
     const handleQuantity=(value)=>{
 
         if(value ==="inc")
@@ -215,25 +207,7 @@ export default function Product() {
                      />
                     <ProductDesc><p style={{color:"grey"}}>{product.description}</p>
                     </ProductDesc>
-                    { shades.length>1 &&
-                    <ShadesContainer>
-                        { product.product_colors && product.product_colors.length>0 ?
-                        <>
-                        <h5>Choose Shades</h5>
-                       <Shades> 
-                       {product.product_colors.map((shade)=>{
-                            return(
-                           <ShadeSingle hexValue={shade.hex_value}  shade={shadeIn} onClick={()=>{handleShade(shade.hex_value)}}></ShadeSingle> )
-                        })}   
-                           </Shades>  
-                           {error &&
-                           <p style={{color:"red",marginTop:"5px"}}>Please choose one</p>
-                            }
-                         </>:
-                         <></> 
-                        } 
-                    </ShadesContainer>
-                    }
+                   
                     <CartContainer>
                         <QuantityContainer>
                             <Button onClick={()=>{handleQuantity("dec")}}><Remove/></Button>
