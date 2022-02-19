@@ -8,7 +8,7 @@ import styled from "styled-components";
 
 
 const SuccessDiv=styled.div`
-background-image: url("https://source.unsplash.com/VJ4pn_PSBLo");
+background-image: url("https://thewaterfrontwyandotte.com/wp-content/uploads/2016/01/black-bg.jpg");
 width: 100vw;
 height: 100vh;
 `
@@ -78,7 +78,7 @@ export default function Success() {
         </Modal.Body>
         <Modal.Footer>
         <Button onClick={()=>history.push("/")} style={{ padding: 10, marginTop: 20 }}>Home</Button>
-        <Button className="bg-success" onClick={()=>history.push("/order")} style={{ padding: 10, marginTop: 20 }}> Orders</Button>
+        <Button className="bg-warning" onClick={()=>history.push("/order")} style={{ padding: 10, marginTop: 20 }}>Your Orders</Button>
         </Modal.Footer>
         </Modal>
         </SuccessDiv>
