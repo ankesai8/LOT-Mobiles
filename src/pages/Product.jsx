@@ -5,7 +5,7 @@ import Navbar from '../components/Navbar'
 import LowerAnnouncement from '../components/LowerAnnouncement'
 import StarRatings from 'react-star-ratings';
 import { Add, Remove } from '@material-ui/icons'
-import Newsletter from '../components/Newsletter'
+
 import Footer from '../components/Footer'
 import { medium,large } from '../responsive'
 import { useParams } from 'react-router'
@@ -211,7 +211,7 @@ export default function Product() {
                 </>
                 }
             </Container>
-            <Newsletter/>
+        
             <Footer/>
         </Maincontainer>
         </>
