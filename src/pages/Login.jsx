@@ -158,7 +158,7 @@ export default function Login() {
                             </div>
                             <div style={{lineHeight:"3px" ,color:"black"}}>
                                 <p>Demo Credentials</p>
-                                <p><b>User</b>: test@gmail.com <b>Password</b>:test123</p><br/>
+                                <p><b>User</b>: user@gmail.com <b>Password</b>:user123</p><br/>
                                 <p><b>Admin</b>: admin@gmail.com <b>Password</b>:admin123</p>
                             </div>
                         </Form>
