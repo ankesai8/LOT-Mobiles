@@ -51,7 +51,7 @@ color: aqua;
 
 const Button=styled.button`
 border: none;
-background-color: black;
+background-color: aqua;
 color: white;
 padding: 8px;
 margin-bottom: 1rem;
