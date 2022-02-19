@@ -1,6 +1,6 @@
 import React,{useState} from 'react'
 import styled from 'styled-components';
-import background from "../assets/login/login.jfif"
+import background from "../assets/login/black.jpg"
 import * as YUP from "yup"
 import {Formik,Form,Field,ErrorMessage} from "formik"
 import { large } from '../responsive';
@@ -45,12 +45,12 @@ margin:1rem 0;
 const Para=styled.p`
 cursor: pointer;
 display: inline-block;
-color: #e46acf;
+color: aqua;
 `
 
 const Button=styled.button`
 border: none;
-background-color: black;
+background-color: aqua;
 color: white;
 padding: 8px;
 margin-bottom: 1rem;
@@ -75,7 +75,7 @@ export default function ForgetPassword() {
         <Container>
             <OuterContainer>
                 <Brand>
-                MakeYouUp
+                Shop-Cart
                 </Brand>
                 <FormContainer>
                     <div style={{textAlign:"center",fontSize:"1.5rem"}}>Reset Password</div>
@@ -95,7 +95,7 @@ export default function ForgetPassword() {
                                     email:values.email
                                 })
                                 console.log(response)
-                                setInfo("Please check your email for activation link")
+                                setInfo("check your email for activation link")
                                 setLoading(false)
                                 }
                                 catch(err)
@@ -109,7 +109,7 @@ export default function ForgetPassword() {
                             return (
                             <Form>
                             <div className="form-group">
-                            <Input type="text" placeholder="Email" className="form-control" id="email" name="email" />
+                            <Input type="text" placeholder="Enter Email" className="form-control" id="email" name="email" />
                             <Error><ErrorMessage name="email"/></Error>
                             </div>
                             <div style={{display:"flex",justifyContent:"center"}}>
@@ -126,7 +126,7 @@ export default function ForgetPassword() {
                             <div className="text-center">
                                 <Button type="submit">Send Link</Button>
                             </div>
-                            <p>Note: Please register with own Email account and proceed with Reset Password in order to receive Activation Link </p>
+                            <p>Note:Register with own Email with Reset Password  to receive Activation Link </p>
                             <h3 className="text-warning">{info}</h3>
                             <div className="text-start">
                             <Link to="/login"><Para>Back to Login</Para></Link>
