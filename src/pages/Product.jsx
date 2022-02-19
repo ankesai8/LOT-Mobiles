@@ -4,7 +4,6 @@ import UpperAnnouncement from '../components/UpperAnnouncement'
 import Navbar from '../components/Navbar'
 import LowerAnnouncement from '../components/LowerAnnouncement'
 import StarRatings from 'react-star-ratings';
-import { shades } from '../data'
 import { Add, Remove } from '@material-ui/icons'
 import Newsletter from '../components/Newsletter'
 import Footer from '../components/Footer'
@@ -49,18 +48,6 @@ const ProductPrice=styled.div`
 const ProductDesc=styled.div`
 `
 
-
-const ShadeSingle=styled.div`
-height: 1.5rem;
-width: 1.5rem;
-background-color: ${props=>props.hexValue};
-border-radius: 50%;
-border: 1px solid black;
-cursor: pointer;
-padding: 2px;
-transform: ${props=> props.shade === props.hexValue ?"scale(1.3)":" "};
-border-radius: ${props=> props.shade === props.hexValue ?"10%":" "};
-`
 const CartContainer=styled.div`
 display: flex;
 justify-content: space-around;
@@ -94,12 +81,12 @@ const CartButton=styled.button`
 export default function Product() {
     let [product,setProduct]=useState({})
     const [loading,setLoading]=useState(true)
-    let [shadeIn,setShade]=React.useState("")
+    let [shadeIn]=React.useState("")
     let [quantity,setQuantity]=React.useState(1)
     const id=useParams().productId
     const dispatch=useDispatch()
     const [alert,setAlert]=useState(false)
-    const [error,setError]=useState(false)
+ 
     // console.log(param)
 
  const getProduct=async(id)=>{
