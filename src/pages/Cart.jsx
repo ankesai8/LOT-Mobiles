@@ -6,7 +6,6 @@ import CartItem from '../components/CartItem'
 import LowerAnnouncement from '../components/LowerAnnouncement'
 import Navbar from '../components/Navbar'
 import UpperAnnouncement from '../components/UpperAnnouncement'
-import Newsletter from '../components/Newsletter'
 import Footer from '../components/Footer'
 import { medium,large } from '../responsive'
 import {useSelector,useDispatch} from "react-redux"
@@ -188,7 +187,7 @@ export default function Cart() {
               </>:<><h2  style={{textAlign:"center" ,width:"100%"}}>Your Cart is empty</h2></>}
             </Container>
 
-            <Newsletter/>
+         
             <Footer/>
         </Maincontainer>
         </>
