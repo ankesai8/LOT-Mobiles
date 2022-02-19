@@ -140,7 +140,7 @@ export default function ResetPassword() {
                             <div className="text-end">
                             <Link to="/register"> <Para>Back to Register</Para></Link>
                             </div>
-
+ 
                         </div> 
                         </Form>
                             )
