@@ -100,7 +100,7 @@ const [minValue, set_minValue] = useState(10);
 const [maxValue, set_maxValue] = useState(20);
 let tempMin,tempMax;
 //initial sort
-const [setSort]=useState("")
+const [sort,setSort]=useState("")
 let tempSort="";
 const handleFilter=(type)=>{
 
@@ -207,7 +207,7 @@ useEffect(()=>{
     else{
         setFilter({...filter,name:""})
     }
-},[location,filter,handleBrand,handleFilter,handleProductType])
+},[location])
 
     return (
         <Maincontainer>
@@ -218,7 +218,7 @@ useEffect(()=>{
             <OuterContainer>
                 <FilterContainer>
                       <SortBy>
-                          <label htmlFor="sort"><p><b>SORT BY </b></p></label>
+                          <label htmlFor="sort"><p><b>SORT BY</b></p></label>
                           <select style={{marginLeft:"auto",height:"2rem",maxWidth:"8rem",fontSize:"1rem"}} onChange={(event)=>{handleSort(event)}}>
                           <option disabled selected> Price Range</option>
                           <option value="low" >Lowest Price</option>
@@ -230,27 +230,27 @@ useEffect(()=>{
                       <p><b>Brands</b></p>
                       <CheckboxContainer>
                       <div><label >Motorola</label></div>
-                      <div><input type="checkbox"  name="nyx" value="nyx" checked={brand.nyx} onChange={(event)=>{handleBrand(event)}}/></div>
+                      <div><input type="checkbox"  name="Motorola" value="Motorola" checked={brand.Motorola} onChange={(event)=>{handleBrand(event)}}/></div>
                       </CheckboxContainer>
                       <CheckboxContainer>
                       <div><label >Micromax</label></div>
-                      <div><input type="checkbox"  name="clinique" value="clinique" checked={brand.clinique} onChange={(event)=>{handleBrand(event)}}/></div>
+                      <div><input type="checkbox"  name="micromax" value="micromax" checked={brand.micromax} onChange={(event)=>{handleBrand(event)}}/></div>
                       </CheckboxContainer>
                       <CheckboxContainer>
                       <div><label >Apple</label></div>
-                      <div><input type="checkbox"  name="maybelline" value="maybellibne" checked={brand.maybelline} onChange={(event)=>{handleBrand(event)}} /></div>
+                      <div><input type="checkbox"  name="apple" value="apple" checked={brand.apple} onChange={(event)=>{handleBrand(event)}} /></div>
                       </CheckboxContainer>
                       <CheckboxContainer>
                       <div><label >MI</label></div>
-                      <div><input type="checkbox"  name="covergirl" value="covergirl" checked={brand.covergirl} onChange={(event)=>{handleBrand(event)}}/></div>
+                      <div><input type="checkbox"  name="mi" value="mi" checked={brand.mi} onChange={(event)=>{handleBrand(event)}}/></div>
                       </CheckboxContainer>
                       <CheckboxContainer>
                       <div><label >Samsung</label></div>
-                      <div><input type="checkbox"  name="loreal" value="loreal" checked={brand.loreal} onChange={(event)=>{handleBrand(event)}}/></div>
+                      <div><input type="checkbox"  name="samsung" value="samsung" checked={brand.samsung} onChange={(event)=>{handleBrand(event)}}/></div>
                       </CheckboxContainer>
                       <CheckboxContainer>
                       <div><label >OppO</label></div>
-                      <div><input type="checkbox"  name="colourpop" value="colourpop" checked={brand.colourpop} onChange={(event)=>{handleBrand(event)}}/></div>
+                      <div><input type="checkbox"  name="oppo" value="oppo" checked={brand.oppo} onChange={(event)=>{handleBrand(event)}}/></div>
                       </CheckboxContainer>
                       </BrandContainer>
                       
@@ -258,27 +258,27 @@ useEffect(()=>{
                       <p><b>Items</b></p>
                       <CheckboxContainer>
                       <div><label >Motorola</label></div>
-                      <div><input type="checkbox"  name="lipstick" value="lipstick" checked={product_type.lipstick} onChange={(event)=>{handleProductType(event)}}/></div>
+                      <div><input type="checkbox"  name="Motorola" value="Motorola" checked={product_type.Motorola} onChange={(event)=>{handleProductType(event)}}/></div>
                       </CheckboxContainer>
                       <CheckboxContainer>
                       <div><label >Micromax</label></div>
-                      <div><input type="checkbox"  name="foundation" value="foundation" checked={product_type.foundation} onChange={(event)=>{handleProductType(event)}}/></div>
+                      <div><input type="checkbox"  name="micromax" value="micromax" checked={product_type.micromax} onChange={(event)=>{handleProductType(event)}}/></div>
                       </CheckboxContainer>
                       <CheckboxContainer>
                       <div><label >Apple</label></div>
-                      <div><input type="checkbox"  name="mascara" value="mascara" checked={product_type.mascara} onChange={(event)=>{handleProductType(event)}}/></div>
+                      <div><input type="checkbox"  name="apple" value="apple" checked={product_type.apple} onChange={(event)=>{handleProductType(event)}}/></div>
                       </CheckboxContainer>
                       <CheckboxContainer>
                       <div><label >MI</label></div>
-                      <div><input type="checkbox"  name="eyeliner" value="eyeliner" checked={product_type.eyeliner} onChange={(event)=>{handleProductType(event)}}/></div>
+                      <div><input type="checkbox"  name="mi" value="mi" checked={product_type.mi} onChange={(event)=>{handleProductType(event)}}/></div>
                       </CheckboxContainer>
                       <CheckboxContainer>
                       <div><label >Samsung</label></div>
-                      <div><input type="checkbox"  name="bronzer" value="bronzer" checked={product_type.bronzer} onChange={(event)=>{handleProductType(event)}}/></div>
+                      <div><input type="checkbox"  name="samsung" value="samsung" checked={product_type.samsung} onChange={(event)=>{handleProductType(event)}}/></div>
                       </CheckboxContainer>
                       <CheckboxContainer>
                       <div><label >OppO</label></div>
-                      <div><input type="checkbox"  name="blush" value="blush" checked={product_type.blush} onChange={(event)=>{handleProductType(event)}}/></div>
+                      <div><input type="checkbox"  name="oppo" value="oppo" checked={product_type.oppo} onChange={(event)=>{handleProductType(event)}}/></div>
                       </CheckboxContainer>
                       </BrandContainer>
 
