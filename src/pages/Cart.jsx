@@ -174,7 +174,7 @@ export default function Cart() {
                         <>
                         <Button onClick={()=>{setAlert(true)}}>checkOut</Button>
                         </>}</div>
-                        <div style={{color:"yellow green",font-size:"20px"}}>
+                        <div style={{color:"yellow green"}}>
                             <p>credentials to checkout:</p><br>
                             <p>card number: <b>4242424242424242</b></p><br>
                             <p>Expiry:<b>02/22</b></p><br>                  
