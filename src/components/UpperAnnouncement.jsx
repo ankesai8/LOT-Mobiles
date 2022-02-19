@@ -4,7 +4,7 @@ import styled,{keyframes} from 'styled-components'
 const colorChange=keyframes`
       0%  {background-color: whitesmoke;}
      50% {background-color: black;}
-    100% {background-color: whitesmoke;}
+    100% {background-color: yellow;}
 `
 
 const Container=styled.div`
