@@ -137,16 +137,16 @@ export default function Product() {
            {
             setAlert(true)
             dispatch({type:"addProduct",payload:cartProduct})
-            setError(false)   
+              
            }
            else{
-               setError(true)
+               
            }
         }
         else{
             setAlert(true)
          dispatch({type:"addProduct",payload:cartProduct})
-         setError(false)
+         
         }
     }
     return (
