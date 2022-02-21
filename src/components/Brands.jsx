@@ -103,7 +103,7 @@ export default function Brands() {
                 </BrandPara>
                 <BrandButton>
                 <Button>
-                  <Link style={{textDecoration:"none" ,color:"inherit"}} to={`/products/brand/${brand.searchName}`}> <h3>shop now</h3></Link>
+                  <Link style={{textDecoration:"none" ,color:"inherit"}} to={`/products/brand/${brand.searchName}`}> <h3></h3></Link>
                 </Button>
                 </BrandButton>
              </BrandText>
