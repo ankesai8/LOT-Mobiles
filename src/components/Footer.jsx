@@ -52,7 +52,7 @@ export default function Footer() {
                 <div><p><Email/> shopcart@gmail.com</p></div>
                 <div><p><Phone/> +91-9966339966</p></div>
                 <div><p><EmailOutlined/>shopcart@gmail.com</p></div>
-                <div></p><LinkedIn/>www.linkedin.com/in/</p></div>
+                <div><p><LinkedIn/>www.linkedin.com/in/</p></div>
                 </Right>
             </InnerContainer>
         </MainContainer>
