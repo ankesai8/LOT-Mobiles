@@ -6,7 +6,7 @@ import Navbar from '../components/Navbar';
 import LowerAnnouncement from '../components/LowerAnnouncement';
 import { medium,large } from '../responsive'
 import {Link} from "react-router-dom"
-import Newsletter from '../components/Newsletter';
+
 import Footer from '../components/Footer';
 import { useSelector } from 'react-redux';
 import axios from 'axios';
@@ -127,7 +127,7 @@ export default function Order() {
            </Container>
             }
         </Maincontainer>
-        <Newsletter/>
+       
         <Footer/>
         </>
     )
