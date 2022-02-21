@@ -51,17 +51,16 @@ export default function Footer() {
                 <div><p><LocationCity/> Hyderabad,Telangana.</p></div>
                 <div><p><Email/> shopcart@gmail.com</p></div>
                 <div><p><Phone/> +91-9966339966</p></div>
+                <div><p><EmailOutlined/>shopcart@gmail.com</p></div>
+                <div></p><LinkedIn/>www.linkedin.com/in/</p></div>
                 </Right>
             </InnerContainer>
         </MainContainer>
         <OwnerDiv>
-            <div>
-            </div>
-            <div className="d-flex gap-1">
-                <div><EmailOutlined/>shopcart@gmail.com</div>
-                <div><LinkedIn/>www.linkedin.com/in/</div>
-                <div><PhoneAndroidOutlined/>+91-9966339966</div>
-            </div>
+           
+                    
+                    
+                    
         </OwnerDiv>
         </>
     )
